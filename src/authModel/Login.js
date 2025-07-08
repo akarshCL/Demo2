@@ -4,6 +4,7 @@ import CommonBtn from './CommonBtn'
 const Login = () => {
         const handleLoginForm = () => {
         console.log("Signup Form")
+        console.log("hi")
     }
   return (
     <div>
