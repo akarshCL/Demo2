@@ -24,9 +24,9 @@ const App = () => {
       <h1>Counter</h1>
       <p> {state}</p>
       <div>
-        <button onClick={Increment}>Incment</button>
-        <button onClick={Decrement}>Decrement</button>
-        <button onClick={Reset} >Reset</button>
+        <button onClick={Increment}>Increment by 1</button>
+        <button onClick={Decrement}>Decrement by 1</button>
+        <button onClick={Reset} >Reset to 0</button>
       </div>
     </>
   )
