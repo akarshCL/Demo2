@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Navbar from './authModel/ForgetPassword'
 
 const App = () => {
 
@@ -12,8 +13,8 @@ const App = () => {
   const Decrement = () => {
     if (state <= 0) {
       alert("any msg")
-    }else{
-      setState(state-1)
+    } else {
+      setState(state - 1)
     }
   }
   const Reset = () => {
@@ -21,6 +22,7 @@ const App = () => {
   }
   return (
     <>
+      <Navbar />
       <h1>Counter</h1>
       <p> {state}</p>
       <div>
