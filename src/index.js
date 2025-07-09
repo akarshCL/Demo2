@@ -2,12 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Appout from './App';
+// import Appout from './App';
+// import Authentication from './Authentication/Auth'
+import Footer from './Footer/Footer'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-    <Appout />
+    {/* <Appout /> */}
+    {/* <Authentication /> */}
+    <Footer />
+
   </>
 );
 
