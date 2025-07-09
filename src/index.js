@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Appout from './App';
+import  './authModel/AuthModel.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
     <Appout />
+    <Authmodel /> 
   </>
 );
 
