@@ -39,6 +39,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./ChildB/ChildB";
 import About from "./ChildC/ChildC";
+import ChildA from "./ChildA/ChildA";
 
 function App() {
   return (
@@ -46,7 +47,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/post/:id" element={<ChildA/>}/>
       </Routes>
+
+
+
+      
     </BrowserRouter>
   );
 }
