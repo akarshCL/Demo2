@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Navbar from './authModel/ForgetPassword'
+import Footer from './Footer/Footer'
 
 const App = () => {
 
@@ -30,6 +31,7 @@ const App = () => {
         <button onClick={Decrement}>Decrement</button>
         <button onClick={Reset} >Reset</button>
       </div>
+      <Footer /> 
     </>
   )
 }
