@@ -1,45 +1,15 @@
-import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
-export const ChildC = () => {
-
-    const [blog, setBlog] = useState([])
-    const [singleBlog,setSingleBlog]=useState("")
-    async function fetchAPI() {
-        let result = await axios.get("https://jsonplaceholder.typicode.com/posts")
-        console.log(result?.data, "result")
-        setBlog(result?.data)
-    }
-
-    useEffect(() => {
-        fetchAPI();
-    }, [])
+const ChildC = () => {
+    const navigate = useNavigate();
     return (
         <div>
-            <h1>Data fetching</h1>
-            {
-                blog.map((item)=>{
-                    return (
-                        <>
-                        <p>{singleBlog}</p>
-                        <h1>{item?.title}</h1>
+            About us
 
-                        <p>{item?.body}</p>
-                        <button onClick={()=>{setSingleBlog(item.id)}}> Read more </button>
-                        </>
-                    )
-                })
-            }
-
+            <button onClick={()=>{navigate("/")}}>Go Back</button>
         </div>
     )
 }
 
-
-export const Example=()=>{
-    return(
-        <>
-        example
-        </>
-    )
-}
+export default ChildC
